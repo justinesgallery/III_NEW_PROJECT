@@ -11,24 +11,24 @@ if(isset($_POST['submit'])){
         $error = 'Username, password, and student number are required!';
         echo "<script>alert('All fields are required!'); window.location='student_login_screen.php';</script>";
     } else {
-        // Check if the username exists in the database
+       
         $select = "SELECT * FROM iii_students WHERE username = '$username'";
         $result = mysqli_query($conn, $select);
         if(mysqli_num_rows($result) == 1) {
             $row = mysqli_fetch_assoc($result);
-            // Verify the password
+        
             if($pass == $row['password']) {
-                // Check if the student number matches
+                
                 if($student_number == $row['students_number']) {
-                    // Check if the user is a student
+                   
                     if($row['role'] == 'student') {
-                        // Start session and set session variables
+                        
                         session_start();
                         $_SESSION['username'] = $row['username'];
                         $_SESSION['name'] = $row['name'];
                         $_SESSION['student_number'] = $row['students_number'];
                         $_SESSION['role'] = $row['role'];
-                        // Redirect to a welcome page or dashboard
+                        
                         header('location: dashboard_student.php');
                     } else {
                         $error = 'You are not authorized to access student dashboard!';

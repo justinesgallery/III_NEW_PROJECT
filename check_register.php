@@ -54,7 +54,6 @@ if(isset($_POST['submit'])){
                     echo "Failed to upload profile picture.";
                     echo "<script>alert('Failed to upload profile picture.'); window.location='register.php';</script>";
                 }
-                // Hash the password
                 //  $hashedPass = password_hash($pass, PASSWORD_DEFAULT);
                 $insert = "INSERT INTO iii_non_students(name, username, pass, role, email, mobile, profile_pic) VALUES('$name','$username','$pass','$role','$email', '$mobile', '$profilePicPath')"; 
                 mysqli_query($conn, $insert);

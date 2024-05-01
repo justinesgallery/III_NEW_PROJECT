@@ -88,7 +88,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
-    // JavaScript functions for handling modal display and announcement details
+    
     $(document).ready(function() {
       $('.announcement').click(function() {
         var id = $(this).data('id');

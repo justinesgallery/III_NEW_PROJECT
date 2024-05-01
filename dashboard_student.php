@@ -14,13 +14,11 @@ if (isset($_SESSION['username']) && isset($_SESSION['role'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="dashboard_non_student.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
-        /* CSS for fade-in animation */
         .fade-in {
             opacity: 0;
             transition: opacity 1s ease-in-out;
@@ -34,7 +32,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['role'])) {
 
 <body>
 
-    <nav class="navbar navbar-expand-lg py-3"> <!-- Adjusting padding here -->
+    <nav class="navbar navbar-expand-lg py-3"> 
         <div class="container-fluid">
             <img class="logo" src="final_logo.png" alt="Logo" srcset="">
             <a class="navbar-brand" href="#" style="color: white">School Hub</a>
@@ -71,7 +69,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['role'])) {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4"> <!-- Adjusted mb-3 to mb-4 -->
+                <div class="col-md-6 mb-4">
                     <div class="dashboard">
                         <div class="options">
                             <div class="option-card">
@@ -82,25 +80,23 @@ if (isset($_SESSION['username']) && isset($_SESSION['role'])) {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4"> <!-- Adjusted mb-3 to mb-4 -->
+                <div class="col-md-6 mb-4">
                     <div class="dashboard">
                         <div class="options">
                             <div class="option-card">
                                 <h2>Event Calendar</h2>
                                 <p>Check out our upcoming events and important dates on the calendar.</p>
-                                <!-- You can link this button to a separate page or modal for the event calendar -->
                                 <button class="option-button" onclick="location.href='calendar_view_for_student.php'">View Calendar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4"> <!-- Adjusted mb-3 to mb-4 -->
+                <div class="col-md-6 mb-4">
                     <div class="dashboard">
                         <div class="options">
                             <div class="option-card">
                                 <h2>Quick Links</h2>
                                 <p>Access important resources quickly with our Quick Links section.</p>
-                                <!-- You can link this button to a separate page or modal for the event calendar -->
                                 <button class="option-button" onclick="location.href='quick_links_student.php'">View QuickLinks</button>
                             </div>
                         </div>
@@ -157,8 +153,6 @@ if (isset($_SESSION['username']) && isset($_SESSION['role'])) {
         <p>Copyright © 2024 CARD-MRI Development Institute Inc. All rights reserved.</p>
     </footer>
 
-
-    <!-- Floating Button for Back to Dashboard -->
     <button class="back-to-dashboard" onclick="location.href='dashboard_student.php'">Back to Home</button>
 
     <?php } ?>

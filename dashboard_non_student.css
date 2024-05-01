@@ -132,20 +132,20 @@ footer ul li a {
     right: 20px;
     z-index: 9999;
     font-size: 16px;
-    border: 2px solid transparent; /* Initially transparent border */
+    border: 2px solid transparent;
     outline: none;
     background-color: #f1b24a;
     color: #fff;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 4px;
-    transition: border-color 0.3s ease; /* Transition for border color */
+    transition: border-color 0.3s ease; 
 }
 
 .back-to-dashboard:hover {
-    background-color: transparent; /* Make the background transparent */
-    border-color: #f1b24a; /* Change border color on hover */
-    color: #f1b24a; /* Change text color on hover */
+    background-color: transparent; 
+    border-color: #f1b24a;
+    color: #f1b24a; 
 }
 .fade-in {
     opacity: 0;

@@ -55,12 +55,11 @@
             const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
             password.setAttribute('type', type);
 
-            // Change the image source based on the type of the password field
             const eyeImg = togglePassword.querySelector('img');
             if (type === 'password') {
-                eyeImg.src = 'view.png'; // Change this to the path of the eye icon image
+                eyeImg.src = 'view.png';
             } else {
-                eyeImg.src = 'hide.png'; // Change this to the path of the eye slash icon image
+                eyeImg.src = 'hide.png';
             }
         });
     </script>

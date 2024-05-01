@@ -40,7 +40,7 @@
 </head>
 
 <body class="bg-light">
-<nav class="navbar navbar-expand-lg py-3"> <!-- Adjusting padding here -->
+<nav class="navbar navbar-expand-lg py-3">
         <div class="container-fluid">
             <img class="logo" src="final_logo.png" alt="Logo" srcset="">
             <a class="navbar-brand" href="#" style="color: white">School Hub</a>
@@ -90,7 +90,6 @@
                 </div>
                 <div class="modal-footer rounded-0">
                     <div class="text-end">
-                        <!-- Removed the edit and delete buttons -->
                         <button type="button" class="btn btn-secondary btn-sm rounded-0" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>

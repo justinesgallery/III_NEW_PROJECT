@@ -45,7 +45,7 @@
                                 
 
 
-<nav class="navbar navbar-expand-lg py-3"> <!-- Adjusting padding here -->
+<nav class="navbar navbar-expand-lg py-3">
         <div class="container-fluid">
             <img class="logo" src="final_logo.png" alt="Logo" srcset="">
             <a class="navbar-brand" href="#" style="color: white">School Hub</a>

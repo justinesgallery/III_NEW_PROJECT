@@ -29,7 +29,6 @@ if (isset($_POST["submit"])) {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>Announcement Form</title>
   <style>
-    /* Styles for the form */
     body {
       font-family: Arial, sans-serif;
     }
